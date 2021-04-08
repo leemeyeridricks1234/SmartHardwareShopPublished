@@ -1,0 +1,12 @@
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\bin\Debug\net5.0\SmartHardwareShop.Repositories.deps.json
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\bin\Debug\net5.0\SmartHardwareShop.Repositories.dll
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\bin\Debug\net5.0\ref\SmartHardwareShop.Repositories.dll
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\bin\Debug\net5.0\SmartHardwareShop.Repositories.pdb
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\SmartHardwareShop.Repositories.csprojAssemblyReference.cache
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\SmartHardwareShop.Repositories.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\SmartHardwareShop.Repositories.AssemblyInfoInputs.cache
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\SmartHardwareShop.Repositories.AssemblyInfo.cs
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\SmartHardwareShop.Repositories.csproj.CoreCompileInputs.cache
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\SmartHardwareShop.Repositories.dll
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\ref\SmartHardwareShop.Repositories.dll
+C:\Code\SmartHardwareShop\SmartHardwareShop.Repositories\obj\Debug\net5.0\SmartHardwareShop.Repositories.pdb
