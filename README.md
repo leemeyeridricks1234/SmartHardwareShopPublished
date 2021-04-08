@@ -9,6 +9,8 @@ Technology Used
 * Bearer Security Tokens
 * Swagger
 * Postman
+* SQL Server / TSQL
+* Entity Framework
 
 
 Getting Started
@@ -83,5 +85,7 @@ NOTES
 * 3rd party security providers can be used - oAuth, OpenID, etc
 * Payments and Notifications can be implemented in the future
 * ServiceResponse object can be enhanced to include Error list (not just message)
+* Controller base class can be created to encapsulate common functions (getting userId, handling errors, etc)
+* Passwords are current stored in plain text in DB - change to hashed
 
 
