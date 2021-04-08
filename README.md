@@ -13,9 +13,9 @@ Technology Used
 
 Getting Started
 * Download C# Project locally
-* Run SQL Seeding Script in Seed.sql - will create required DBs and sample data
-* Change connection string in appsettings.json to point to correct DB
-* Build project
+* Run SQL Seeding Script in Seed.sql (under API project) - will create required DBs and sample data
+* Change connection string in appsettings.json to point to correct DB (under API project)
+* Build Solution
 * Run Solution - will open Swagger landing page by default (https://localhost:44308/swagger/index.html)
 
 APIs
