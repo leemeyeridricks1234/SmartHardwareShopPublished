@@ -14,11 +14,51 @@ Technology Used
 
 
 Getting Started
-* Download C# Project locally
+* Download .NET Solution locally
 * Run SQL Seeding Script in Seed.sql (under API project) - will create required DBs and sample data
 * Change connection string in appsettings.json to point to correct DB (under API project)
+* Optional change secret key in appsettings.json
 * Build Solution
 * Run Solution - will open Swagger landing page by default (https://localhost:44308/swagger/index.html)
+
+
+Solution Structure
+* Startup - contains initialization code - register dependencies
+* Setup using a combination of API controllers and DDD project structure
+* Controllers - contains API methods with optional security authorization
+* DTOs - contains DTOs for API requests and responses that are custom
+* Models - contains the EF models used 
+* Repositories - contains the DB access components for EF
+* Responses - contains the generic PagedResponses and ServiceResponse classes used to provide consistency across responses
+* Services - contains business services - orchestrates activities and encapsulates business rules
+* Validators - contains the validators for API requests - validation logic centralized in one location
+
+
+NOTES
+* Not all validations are implemented (time constrained) - TODOs are specified where validators can be implemented
+* Logging not implemented - can be done using DI
+* Not all unit tests and integration tests are impelemented (time constrained)
+* Async Tasks can be used for operations
+* Not implemented: Additional shopping cart functions can be added (update basket)
+* Not implemented: Transactions can be added in future
+* Not implemented: Updating of Order status can be implemented in future
+* ServiceResponse object can be enhanced to include Error list (not just message)
+* Controller base class can be created to encapsulate common functions (getting userId, handling errors, etc)
+* Passwords are current stored in plain text in DB - change to hashed
+
+FUTURE DESIGN CHANGES
+* Separate APIs in their own domain - allow APIs to be deployed/scaled separately - can be done using Cloud (Azure, AWS, etc) or Docker
+* Not implemented: Caching can be implemented to improve performance for reads - recommended distributed cache and invalidate cache strategies
+* Not implemented: 3rd party security providers - oAuth, OpenID, etc - allow for flexible login options
+* Not implemented: Payments and Notifications can be implemented in the future - can be done via a Service Bus
+* Traffic Manager can be implemented - improvement performance - deploy in regions closer to customers
+* Load balancing across multiple deployments can be implemented - improved reliability, availability and performance
+* Implement SQL replication for improved reliability and availability - Load balancer and SQL Replication
+* CQRS design - separate between reads/writes - allow scaling of read operations to improve performance
+* Host images and static content in CDN/Blob Storage to improve scalability and performance
+* Full text search can be implemented for the website - exacmple: Azure Search or Elastic Search
+* Monitoring and Insights can be implemented to monitor APIs and web sites
+* Automated deployments can be implemented to roll out code to environments (CI/CD, Azure DevOps, etc)
 
 APIs
 
@@ -73,19 +113,6 @@ Checkout
 * Clears the cart for the user
 
 
-NOTES
-* Not all validations are implemented (time constrained) - TODOs are specified where validators can be implemented
-* Logging not implemented - can be done using DI
-* Not all unit tests and integration tests are impelemented (time constrained)
-* Async Tasks can be used for operations
-* Additional shopping cart functions can be added
-* Transactions can be added in future
-* Updating of Order status can be implemented in future
-* Caching can be implemented to improve performance for reads
-* 3rd party security providers can be used - oAuth, OpenID, etc
-* Payments and Notifications can be implemented in the future
-* ServiceResponse object can be enhanced to include Error list (not just message)
-* Controller base class can be created to encapsulate common functions (getting userId, handling errors, etc)
-* Passwords are current stored in plain text in DB - change to hashed
+
 
 
