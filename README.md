@@ -48,6 +48,7 @@ NOTES
 
 FUTURE DESIGN CHANGES
 * Separate APIs in their own domain - allow APIs to be deployed/scaled separately - can be done using Cloud (Azure, AWS, etc) or Docker
+* SpecFlow BDD testing
 * Not implemented: Caching can be implemented to improve performance for reads - recommended distributed cache and invalidate cache strategies
 * Not implemented: 3rd party security providers - oAuth, OpenID, etc - allow for flexible login options
 * Not implemented: Payments and Notifications can be implemented in the future - can be done via a Service Bus
